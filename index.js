@@ -1,15 +1,16 @@
-const { getTokens } = require('./src/config')
-const { process } = require('./src/scream-liquidity-processor')
+const { getTokens, runValidations } = require('./src/config');
+const { process } = require('./src/scream-liquidity-processor');
+const { sendMessage } = require('./src/telegram.client');
 const tokens = getTokens();
 
-if (tokens.length < 1) {
-  throw new Error("configure tokens property in /src/config/config.json");
-}
+runValidations()
 
 console.info(`Executing Scream sh v1 liquidity seeker for tokens: ${tokens}`);
 
 function main() {
-  process().then( () => console.info('Waiting 1 minute until next execution :D'));
+  sendMessage(`Initiliazed bot - tokens ${tokens}`)
+  .then(process)
+  .then(() => console.info('Waiting 1 minute until next execution :D'));
 }
 
 main();
