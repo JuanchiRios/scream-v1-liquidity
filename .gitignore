@@ -1,0 +1,18 @@
+## IDE and OS
+.idea
+.DS_Store
+
+# Source Code
+.env
+node_modules
+dist/
+yarn-error.log
+
+# generated lambda zip
+*.zip
+
+/.yalc/
+/yalc.lock
+
+# Jest Coverage Reports
+test/reports/

@@ -1,0 +1,132 @@
+[
+ {
+  "underlyingSymbol": "fUSDT",
+  "cash": "0.000001",
+  "underlyingPriceUSD": "0.998967"
+ },
+ {
+  "underlyingSymbol": "BIFI",
+  "cash": "4.001919885641934815",
+  "underlyingPriceUSD": "301.180607354431019806"
+ },
+ {
+  "underlyingSymbol": "YFI",
+  "cash": "0.633495347380851124",
+  "underlyingPriceUSD": "5122.194596805632092704"
+ },
+ {
+  "underlyingSymbol": "FETH",
+  "cash": "0",
+  "underlyingPriceUSD": "1956.9303"
+ },
+ {
+  "underlyingSymbol": "SNX",
+  "cash": "0.000000000000000001",
+  "underlyingPriceUSD": "8.358"
+ },
+ {
+  "underlyingSymbol": "LINK",
+  "cash": "105637.169627364130108941",
+  "underlyingPriceUSD": "6.302305741655970224"
+ },
+ {
+  "underlyingSymbol": "TOMB",
+  "cash": "0",
+  "underlyingPriceUSD": "0"
+ },
+ {
+  "underlyingSymbol": "FRAX",
+  "cash": "5.000047939447702761",
+  "underlyingPriceUSD": "0.998413604010081191"
+ },
+ {
+  "underlyingSymbol": "BTC",
+  "cash": "0",
+  "underlyingPriceUSD": "19896.02172774"
+ },
+ {
+  "underlyingSymbol": "BAND",
+  "cash": "0",
+  "underlyingPriceUSD": "4.98"
+ },
+ {
+  "underlyingSymbol": "FRAX",
+  "cash": "0.000000000000000044",
+  "underlyingPriceUSD": "1.000857888618434337"
+ },
+ {
+  "underlyingSymbol": "SCREAM",
+  "cash": "0",
+  "underlyingPriceUSD": "0.1"
+ },
+ {
+  "underlyingSymbol": "DOLA",
+  "cash": "38820.036408599016827761",
+  "underlyingPriceUSD": "1"
+ },
+ {
+  "underlyingSymbol": "WFTM",
+  "cash": "0.000000403363095679",
+  "underlyingPriceUSD": "0.257977133196467673"
+ },
+ {
+  "underlyingSymbol": "DEI",
+  "cash": "11000971.648648404703060916",
+  "underlyingPriceUSD": "1"
+ },
+ {
+  "underlyingSymbol": "TUSD",
+  "cash": "0.001158244735399492",
+  "underlyingPriceUSD": "1"
+ },
+ {
+  "underlyingSymbol": "SUSHI",
+  "cash": "0",
+  "underlyingPriceUSD": "7.096564"
+ },
+ {
+  "underlyingSymbol": "CRV",
+  "cash": "29577.786748687683153473",
+  "underlyingPriceUSD": "0.79319465111885162"
+ },
+ {
+  "underlyingSymbol": "FUSD",
+  "cash": "605.318016138657043767",
+  "underlyingPriceUSD": "0.759972200216916065"
+ },
+ {
+  "underlyingSymbol": "DAI",
+  "cash": "0",
+  "underlyingPriceUSD": "1.000072747338902342"
+ },
+ {
+  "underlyingSymbol": "MIM",
+  "cash": "0",
+  "underlyingPriceUSD": "0.99340164136795876"
+ },
+ {
+  "underlyingSymbol": "BOO",
+  "cash": "3050.43628099979484799",
+  "underlyingPriceUSD": "2.029302319067563981"
+ },
+ {
+  "underlyingSymbol": "SPELL",
+  "cash": "0.514668842946071728",
+  "underlyingPriceUSD": "0.000967004626970745"
+ },
+ {
+  "underlyingSymbol": "ETH",
+  "cash": "0.000000000106443831",
+  "underlyingPriceUSD": "1141.108258259912852387"
+ },
+ {
+  "underlyingSymbol": "FBTC",
+  "cash": "0",
+  "underlyingPriceUSD": "31703.9"
+ },
+ {
+  "underlyingSymbol": "USDC",
+  "cash": "0",
+  "underlyingPriceUSD": "0.999999"
+ }
+]
