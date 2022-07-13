@@ -46,4 +46,5 @@ Or create .env file in the root of the project and then you can `npm run` to exe
 ```
 TELEGRAM_BOT_API_KEY=<your_api_key>
 TELEGRAM_CHANNEL_ID=<your_channel_name>
+SERVER_NAME=<your-name>
 ```

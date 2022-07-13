@@ -1,7 +1,7 @@
 const _ = require('lodash');
 const config = require("./config/config.json")
 
-const { TELEGRAM_BOT_API_KEY, TELEGRAM_CHANNEL_ID } = process.env;
+const { TELEGRAM_BOT_API_KEY, TELEGRAM_CHANNEL_ID, SERVER_NAME } = process.env;
 
 function getTokens() {
   return config.tokens;
@@ -9,6 +9,10 @@ function getTokens() {
 
 function getTelegramBotApiKey() {
   return TELEGRAM_BOT_API_KEY;
+}
+
+function getServerName() {
+  return SERVER_NAME || '';
 }
 
 function getTelegramCredentials() {
@@ -37,5 +41,6 @@ function runValidations() {
 module.exports = {
   getTokens,
   getTelegramCredentials,
-  runValidations
+  runValidations,
+  getServerName
 }
