@@ -13,9 +13,8 @@ console.info(`Executing Scream sh v1 liquidity seeker ${serverNameMessage}for to
 
 function main() {
   process()
-  .then(() => console.info('Waiting 1 minute until next execution :D'));
 }
 
 main();
 // Second will be executed in one minute
-setInterval(main, 60 * 1000);
+setInterval(main, 10 * 1000);

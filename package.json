@@ -1,23 +1,28 @@
 {
- "name": "scream-liquidity-automation",
- "version": "1.0.0",
- "main": "index.js",
- "description": "Node script to pull data from scream sh v1 and notify thru a telegram channel when there is available liquidity for tokens",
- "scripts": {
-  "test": "jest --config jest.config.js",
-  "start": "export $(cat .env | xargs) && node index.js"
- },
- "author": "",
- "license": "ISC",
- "dependencies": {
-  "axios": "^0.27.2",
-  "cowsay": "^1.5.0",
-  "date-fns": "^2.28.0",
-  "graphql": "^16.5.0",
-  "graphql-request": "^4.3.0",
-  "lodash": "^4.17.21"
- },
- "devDependencies": {
-  "jest": "^28.1.2"
- }
+  "name": "scream-liquidity-automation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Node script to pull data from scream sh v1 and notify thru a telegram channel when there is available liquidity for tokens",
+  "scripts": {
+    "test": "jest --config jest.config.js",
+    "start": "export $(cat .env | xargs) && node index.js",
+    "docker:login": "docker login -u AWS -p $(aws ecr get-login-password --region  us-east-1) 054734420187.dkr.ecr.us-east-1.amazonaws.com",
+    "docker:build": "docker build . -t scream-v1-liquidity-alpine",
+    "docker:tag": "docker tag scream-v1-liquidity-alpine 054734420187.dkr.ecr.us-east-1.amazonaws.com/scream-liquidity-provider-alpine",
+    "docker:push": "docker push 054734420187.dkr.ecr.us-east-1.amazonaws.com/scream-liquidity-provider-alpine",
+    "ssh": "ssh -i ./personal-mac.pem ec2-user@ec2-44-203-119-54.compute-1.amazonaws.com"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cowsay": "^1.5.0",
+    "date-fns": "^2.28.0",
+    "graphql": "^16.5.0",
+    "graphql-request": "^4.3.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "jest": "^28.1.2"
+  }
 }

@@ -16,3 +16,5 @@ yarn-error.log
 
 # Jest Coverage Reports
 test/reports/
+
+personal-mac.pem

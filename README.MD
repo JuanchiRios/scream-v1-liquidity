@@ -48,3 +48,23 @@ TELEGRAM_BOT_API_KEY=<your_api_key>
 TELEGRAM_CHANNEL_ID=<your_channel_name>
 SERVER_NAME=<your-name>
 ```
+
+
+# Deploy process
+- npm run docker:login
+- npm run docker:build
+- npm run docker:tag
+- npm run docker:push
+
+- npm run ssh
+
+On the server instance:
+- docker login -u AWS -p $(aws ecr get-login-password --region  us-east-1) 054734420187.dkr.ecr.us-east-1.amazonaws.com
+- docker pull 054734420187.dkr.ecr.us-east-1.amazonaws.com/scream-liquidity-provider-alpine:latest
+- docker ps
+- docker stop CONTAINER_ID
+- docker rm CONTAINER_ID
+- docker run -d 054734420187.dkr.ecr.us-east-1.amazonaws.com/scream-liquidity-provider-alpine:latest
+
+* all these commands can be simplified if we were interested in multiple people deploying.
+* I don't expect so, hence I'm not spending time on it until it becomes the case.
