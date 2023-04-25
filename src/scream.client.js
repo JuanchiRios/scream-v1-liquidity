@@ -14,16 +14,20 @@ const MARKETS_REQUEST_BODY = gql`
     }
 `;
 
-async function fetchAllMarkets() {
+async function fetchAllMarkets(retries = 5) {
   const graphQLClient = __getGraphQLClient(SCREAM_API_ENDPOINT);
-
   let response;
   try {
     response = await graphQLClient.request(MARKETS_REQUEST_BODY);
+    return response.markets;
   } catch (error) {
     console.error(`Error while fetching the markets from scream. Details: ${error}`);
+    if (retries > 1) {
+      return fetchAllMarkets(retries - 1)
+    }
+    throw error
   }
-  return response.markets;
+
 }
 
 
