@@ -10,7 +10,7 @@
     "docker:build": "docker build . -t scream-v1-liquidity-alpine",
     "docker:tag": "docker tag scream-v1-liquidity-alpine 054734420187.dkr.ecr.us-east-1.amazonaws.com/scream-liquidity-provider-alpine",
     "docker:push": "docker push 054734420187.dkr.ecr.us-east-1.amazonaws.com/scream-liquidity-provider-alpine",
-    "ssh": "ssh -i ./personal-mac.pem ec2-user@ec2-44-203-119-54.compute-1.amazonaws.com"
+    "ssh": "ssh -i ./personal-mac.pem ec2-user@ec2-44-221-231-180.compute-1.amazonaws.com"
   },
   "author": "",
   "license": "ISC",
